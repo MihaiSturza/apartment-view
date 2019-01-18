@@ -1,0 +1,15 @@
+<div class="container">
+  <div *ngFor="let image of images; let i = index" class="wrapper">
+    <div (click)="modalView(i)">
+      <img src="{{image.src}}" class="image">
+    </div>
+  </div>
+</div>
+<!-- <div class="overlay" *ngIf="modalOpen"></div> -->
+<div *ngIf="modalOpen" class="modal">
+    <img src="{{selectedImage.src}}" class="selectedImage" (click)="modalOpen=!modalOpen">
+    <div class="buttons">
+      <button class="button" (click)="showPrevious()">Previous</button>
+      <button class="button" (click)="showNext()">Next</button>
+    </div>
+</div>

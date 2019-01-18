@@ -1,0 +1,10 @@
+<div class="video-container">
+  <button (click)="one = !one">Two room apartment</button>
+  <button (click)="two = !two">Three room apartment(1)</button>
+  <button (click)="three = !three">Two room apartment(2)</button>
+  <div class="video" style="">
+    <iframe *ngIf="one" frameborder="0" width="700px" height="600px" src="https://www.gizmo3dstudio.com/BlocRomanCiorogariu/Apartament_1/Apartament1.html"></iframe>
+    <iframe *ngIf="two" frameborder="0" width="700px" height="600px" src="https://www.gizmo3dstudio.com/BlocRomanCiorogariu/Apartament_2/Apartament2.html"></iframe>
+    <iframe *ngIf="three" frameborder="0" width="700px" height="600px" src="https://www.gizmo3dstudio.com/BlocRomanCiorogariu/Apartament_3/Apartament3.html"></iframe>
+  </div>
+</div>
