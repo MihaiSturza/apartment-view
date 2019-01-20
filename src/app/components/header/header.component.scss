@@ -1,0 +1,41 @@
+.container {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background-color: rgba(19, 53, 18, 0.747);
+  position: fixed;
+  text-align: right;
+  z-index: 200;
+  .title {
+    position: absolute;
+    cursor: default;
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2) translateX(3rem);
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+    line-height: 5rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+
+  }
+
+  .active {
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: 300;
+  }
+
+}
